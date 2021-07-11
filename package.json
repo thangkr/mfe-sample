@@ -1,6 +1,6 @@
 {
-  "name": "metronic-angular",
-  "version": "7.0.5",
+  "name": "mfe-sample",
+  "version": "0.0.0",
   "description": "Packages used by Angular",
   "scripts": {
     "ng": "ng",
@@ -56,6 +56,7 @@
     "moment-timezone": "0.5.27",
     "ng-apexcharts": "1.2.3",
     "ng-inline-svg": "9.2.2",
+    "ng-module-federation": "0.2.0",
     "ng-pick-datetime": "7.0.0",
     "ngrx-store-freeze": "0.2.4",
     "ngx-clipboard": "12.3.0",
