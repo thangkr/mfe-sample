@@ -25,3 +25,13 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+# Create new MFE application
+ng generate application --routing --style scss account
+ng add ng-module-federation --project account --type micro --port 4220 --minimal
+
+ng generate component account/accounts-list --project account --style scss
+
+update in file /src/micro-frontends.ts

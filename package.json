@@ -4,10 +4,14 @@
   "description": "Packages used by Angular",
   "scripts": {
     "ng": "ng",
-    "start": "node --max_old_space_size=8192 node_modules/@angular/cli/bin/ng serve",
+    "start": "run-p start:*",
+    "start:ff": "ng serve --project ff",
+    "start:account": "ng serve --project account",
+    "start:shell": "ng serve --project shell",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
+    "prestart": "ngcc",
     "e2e": "ng e2e",
     "bundle-report": "webpack-bundle-analyzer dist/stats.json",
     "rtl": "webpack"
@@ -56,7 +60,7 @@
     "moment-timezone": "0.5.27",
     "ng-apexcharts": "1.2.3",
     "ng-inline-svg": "9.2.2",
-    "ng-module-federation": "0.2.0",
+    "ng-module-federation": "0.0.2",
     "ng-pick-datetime": "7.0.0",
     "ngrx-store-freeze": "0.2.4",
     "ngx-clipboard": "12.3.0",
@@ -103,6 +107,7 @@
     "karma-coverage-istanbul-reporter": "3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "npm-run-all": "^4.1.5",
     "prettier": "1.19.1",
     "pretty-quick": "2.0.1",
     "protractor": "7.0.0",
@@ -119,5 +124,8 @@
     "webpack-cli": "3.3.10",
     "webpack-messages": "2.0.4",
     "webpack-rtl-plugin": "2.0.0"
+  },
+  "resolutions": {
+    "webpack": "^5.4.0"
   }
 }
