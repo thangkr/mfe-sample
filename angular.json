@@ -26,30 +26,10 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets",
-              "src/.htaccess"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": [
-              "node_modules/popper.js/dist/umd/popper.js",
-              "node_modules/tooltip.js/dist/umd/tooltip.min.js",
-              "node_modules/perfect-scrollbar/dist/perfect-scrollbar.js",
-              "node_modules/clipboard/dist/clipboard.js",
-              "node_modules/apexcharts/dist/apexcharts.min.js",
-              "src/assets/js/layout/extended/examples.js"
-            ],
-            "allowedCommonJsDependencies": [
-              "hammerjs",
-              "chart.js",
-              "rxjs",
-              "moment-timezone",
-              "file-saver",
-              "jwt-decode"
-            ],
+            "assets": ["src/favicon.ico", "src/assets", "src/.htaccess"],
+            "styles": ["src/styles.scss"],
+            "scripts": [],
+            "allowedCommonJsDependencies": ["hammerjs", "chart.js", "rxjs", "moment-timezone", "file-saver", "jwt-decode"],
             "extraWebpackConfig": "webpack.config.js"
           },
           "configurations": {
@@ -110,26 +90,17 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": [],
-            "assets": [
-              "src/assets"
-            ],
+            "assets": ["src/assets"],
             "extraWebpackConfig": "webpack.config.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": ["tsconfig.app.json", "tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
@@ -157,13 +128,8 @@
             "polyfills": "projects/ff/src/polyfills.ts",
             "tsConfig": "projects/ff/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "projects/ff/src/favicon.ico",
-              "projects/ff/src/assets"
-            ],
-            "styles": [
-              "projects/ff/src/styles.scss"
-            ],
+            "assets": ["projects/ff/src/favicon.ico", "projects/ff/src/assets"],
+            "styles": ["projects/ff/src/styles.scss"],
             "scripts": [],
             "extraWebpackConfig": "projects/ff/webpack.config.js"
           },
@@ -225,13 +191,8 @@
             "polyfills": "projects/ff/src/polyfills.ts",
             "tsConfig": "projects/ff/tsconfig.spec.json",
             "karmaConfig": "projects/ff/karma.conf.js",
-            "assets": [
-              "projects/ff/src/favicon.ico",
-              "projects/ff/src/assets"
-            ],
-            "styles": [
-              "projects/ff/src/styles.scss"
-            ],
+            "assets": ["projects/ff/src/favicon.ico", "projects/ff/src/assets"],
+            "styles": ["projects/ff/src/styles.scss"],
             "scripts": [],
             "extraWebpackConfig": "projects/ff/webpack.config.js"
           }
@@ -239,14 +200,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "projects/ff/tsconfig.app.json",
-              "projects/ff/tsconfig.spec.json",
-              "projects/ff/e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": ["projects/ff/tsconfig.app.json", "projects/ff/tsconfig.spec.json", "projects/ff/e2e/tsconfig.json"],
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
@@ -286,13 +241,8 @@
             "polyfills": "projects/account/src/polyfills.ts",
             "tsConfig": "projects/account/tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "projects/account/src/favicon.ico",
-              "projects/account/src/assets"
-            ],
-            "styles": [
-              "projects/account/src/styles.scss"
-            ],
+            "assets": ["projects/account/src/favicon.ico", "projects/account/src/assets"],
+            "styles": ["projects/account/src/styles.scss"],
             "scripts": [],
             "extraWebpackConfig": "projects/account/webpack.config.js"
           },
@@ -354,13 +304,8 @@
             "polyfills": "projects/account/src/polyfills.ts",
             "tsConfig": "projects/account/tsconfig.spec.json",
             "karmaConfig": "projects/account/karma.conf.js",
-            "assets": [
-              "projects/account/src/favicon.ico",
-              "projects/account/src/assets"
-            ],
-            "styles": [
-              "projects/account/src/styles.scss"
-            ],
+            "assets": ["projects/account/src/favicon.ico", "projects/account/src/assets"],
+            "styles": ["projects/account/src/styles.scss"],
             "scripts": [],
             "extraWebpackConfig": "projects/account/webpack.config.js"
           }
@@ -368,14 +313,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "projects/account/tsconfig.app.json",
-              "projects/account/tsconfig.spec.json",
-              "projects/account/e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "tsConfig": ["projects/account/tsconfig.app.json", "projects/account/tsconfig.spec.json", "projects/account/e2e/tsconfig.json"],
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
